@@ -14,24 +14,53 @@
   </head>
   <body>
     <header class="header container">
-      <img
-        class="header-img"
-        src="/public/assets/shared/desktop/logo-dark.png"
-        alt=""
-      />
+      <a href="/index.html">
+        <img
+          class="header-img"
+          src="/public/assets/shared/desktop/logo-dark.png"
+          alt=""
+        />
+      </a>
       <img
         class="mobile-menu-icon"
         src="./public/assets/shared/mobile/icon-hamburger.svg"
         alt=""
       />
+      <img
+        class="close-button"
+        id="button-close"
+        src="/public/assets/shared/mobile/icon-close.svg"
+        alt=""
+      />
+
       <nav class="navigation-menu">
-        <a class="link-text" href="">Our company</a>
-        <a class="link-text" href="">Locations</a>
-        <a class="link-text" href="">Contact</a>
+        <a class="link-text" href="./about.html">Our company</a>
+        <a class="link-text" href="./locations.html">Locations</a>
+        <a class="link-text" href="./contact.html">Contact</a>
       </nav>
+
+      <div class="mobile-nav">
+        <div class="moble-nav-content">
+          <nav>
+            <ul class="mobile-nav-menu">
+              <li class="nav-list-mobile">
+                <a class="mobile-nav-link" href="/about.html">Our company</a>
+              </li>
+
+              <li class="nav-list-mobile">
+                <a class="mobile-nav-link" href="/locations.html">Locations</a>
+              </li>
+
+              <li class="nav-list-mobile">
+                <a class="mobile-nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
-    <section class="hero container section">
+    <section class="hero container">
       <div class="hero-circle"></div>
       <h1 class="hero-title">
         Award-winning custom designs and digital branding solutions
@@ -42,15 +71,20 @@
         out more about our services.
       </p>
       <div class="learn-more-button-box">
-        <button class="learn-more-button">Learn more</button>
+        <a href="about.html">
+          <button class="learn-more-button">Learn more</button>
+        </a>
       </div>
     </section>
 
     <section class="home-section-2 container section">
       <div id="one" class="web-design-box">
         <h1 class="home-section-2-title">Web Design</h1>
+
         <div class="text-arrow-box">
-          <p class="home-section-2-text">View Projects</p>
+          <a class="home-section-2-text" href="/web-design.html">
+            <p class="home-section-2-text">View Projects</p>
+          </a>
           <img
             class="arrow"
             src="./public/assets/shared/desktop/icon-right-arrow.svg"
@@ -62,7 +96,9 @@
       <div id="two" class="web-design-box-2">
         <h1 class="home-section-2-title">App Design</h1>
         <div class="text-arrow-box">
-          <p class="home-section-2-text">View Projects</p>
+          <a class="home-section-2-text" href="/app-design.html">
+            <p class="home-section-2-text">View Projects</p>
+          </a>
           <img
             class="arrow"
             src="./public/assets/shared/desktop/icon-right-arrow.svg"
@@ -74,7 +110,9 @@
       <div id="three" class="web-design-box-3">
         <h1 class="home-section-2-title">Graphic Design</h1>
         <div class="text-arrow-box">
-          <p class="home-section-2-text">View Projects</p>
+          <a class="home-section-2-text" href="/graphic-design.html">
+            <p class="home-section-2-text">View Projects</p>
+          </a>
           <img
             class="arrow"
             src="./public/assets/shared/desktop/icon-right-arrow.svg"
@@ -148,7 +186,9 @@
         </div>
 
         <div class="home-section-4-button-box">
-          <button class="home-section-4-button">Get in touch</button>
+          <a href="/contact.html">
+            <button class="home-section-4-button">Get in touch</button>
+          </a>
         </div>
       </div>
     </section>
@@ -161,9 +201,9 @@
           alt=""
         />
         <nav class="navigation-menu-footer">
-          <a class="link-text-footer" href="">Our company</a>
-          <a class="link-text-footer" href="">Locations</a>
-          <a class="link-text-footer" href="">Contact</a>
+          <a class="link-text-footer" href="./about.html">Our company</a>
+          <a class="link-text-footer" href="./locations.html">Locations</a>
+          <a class="link-text-footer" href="./contact.html">Contact</a>
         </nav>
       </div>
 

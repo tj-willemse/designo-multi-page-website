@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .header-img {
@@ -9,6 +9,7 @@
   height: 100px;
 }
 .mobile-menu-icon {
+  display: block;
   object-fit: contain;
   width: 20px;
   height: 20px;
@@ -30,6 +31,7 @@
 @media (min-width: 640px) {
   .header {
     justify-content: space-around;
+    padding: 40px;
   }
   .mobile-menu-icon {
     display: none;

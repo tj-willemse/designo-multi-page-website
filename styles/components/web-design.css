@@ -1,0 +1,289 @@
+/* SECTION ONE START */
+.design-section-one-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-peach);
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-image: url(/public/assets/web-design/desktop/bg-pattern-intro-web.svg);
+}
+.design-section-one-title {
+  color: var(--clr-white);
+  font-weight: 400;
+  font-size: var(--size-3xl);
+}
+.design-section-one-paragraph {
+  font-size: var(--size-sm);
+  text-align: center;
+  color: var(--clr-white);
+  font-weight: 200;
+  max-width: 40ch;
+}
+
+/* SECTION TWO START */
+.web-design-section-two-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 3rem;
+}
+.web-design-section-two-img-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.web-design-section-two-images {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.web-design-section-two-text-box {
+  background-color: rgba(225, 173, 155, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  gap: 10px;
+  width: 100%;
+}
+.web-design-section-two-text-box:hover {
+  background-color: var(--clr-peach);
+}
+.web-design-section-two-text-box:hover .web-design-section-two-title,
+.web-design-section-two-text-box:hover .web-design-section-two-paragraph {
+  color: var(--clr-white);
+}
+
+.web-design-section-two-title {
+  color: var(--clr-peach);
+  letter-spacing: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: var(--size-lg);
+}
+
+.web-design-section-two-paragraph {
+  text-align: center;
+  font-size: var(--size-sm);
+}
+
+/* SECTION THREE START */
+.web-design-section-three-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.web-design-section-three-content-box-app {
+  background-image: url(/public/assets/home/mobile/image-app-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.web-design-section-three-content-box-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.web-design-section-three-content-box {
+  background-image: url(/public/assets/home/mobile/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.web-design-section-three-content-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  /* SECTION TWO START */
+
+  .web-design-section-two-box {
+    padding: 60px;
+  }
+
+  /* SECTION THREE */
+  .web-design-section-three-box {
+    padding: 60px;
+  }
+}
+
+/* Sm */
+@media (min-width: 640px) {
+  /* SECTION ONE START */
+
+  .design-section-one-box-main {
+    padding: 40px;
+    margin-top: -50px;
+  }
+  .design-section-one-box {
+    border-radius: 10px;
+  }
+  .design-section-one-title {
+    font-size: var(--size-4xl);
+  }
+
+  /* SECTION TWO START */
+  .web-design-section-two-img-text-box {
+    flex-direction: row;
+    width: 100%;
+  }
+  .web-design-section-two-text-box {
+    height: 238px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+  }
+
+  .web-design-section-two-images {
+    width: 50%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .web-design-section-two-text-box {
+    height: 297px;
+  }
+}
+
+/* Lg */
+@media (min-width: 1024px) {
+  /* SECTION ONE START */
+  .design-section-one-title {
+    font-size: var(--size-5xl);
+  }
+
+  .design-section-one-paragraph {
+    font-size: var(--size-base);
+    max-width: 43ch;
+  }
+
+  /* SECTION TWO  */
+  .web-design-section-two-img-text-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .web-design-section-two-text-box {
+    height: 50%;
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+  }
+
+  .web-design-section-two-images {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .web-design-section-two-box {
+    display: grid;
+    grid-template-columns: repeat(3, 290px);
+    grid-template-rows: repeat((2, 1fr));
+    gap: 2rem;
+
+    justify-content: center;
+  }
+
+  /* SECTION 3 */
+
+  .web-design-section-three-box {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .web-design-section-three-content-box-app {
+    background-image: url(/public/assets/home/desktop/image-app-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+  .web-design-section-three-content-box {
+    background-image: url(/public/assets/home/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+}
+
+/* xL */
+@media (min-width: 1280px) {
+  /* SECTION ONE START */
+  .web-design-section-one-title {
+    font-size: var(--size-6xl);
+  }
+  .design-section-one-title {
+    font-size: var(--size-6xl);
+  }
+
+  .design-section-one-paragraph {
+    font-size: var(--size-base);
+    max-width: 43ch;
+  }
+
+  /* SECTION 2 */
+  .web-design-section-two-box {
+    grid-template-columns: repeat(3, 460px);
+  }
+  .web-design-section-two-text-box {
+    height: 150px;
+  }
+
+  /* SECTION 3 */
+}
+
+/* 2xL */
+/* @media (min-width: 1536px) {} */
